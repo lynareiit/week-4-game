@@ -1,0 +1,70 @@
+<!-- Create rows and columns based on layuot of crystals collector assignment layout -->
+<!-- Assign iDs to each class row and column -->
+
+<!DOCTYPE html>
+
+<html lang ="en-us">
+	<head>
+	<meta charset="UTF-8">
+		<title>Crystals Collector!</title>
+		<!-- Link to jQuery Cloud Library -->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <!-- Link to Eric Meyer's Reset CSS sheet -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		 <!-- Link to Boostrap CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<!-- Link to custom CSS -->
+ 		 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ 		
+
+	</head>
+
+	<body>
+		<!-- Create a container -->
+		<div class="container">
+			<!-- Create a new row for the header -->
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 id="header">Crystals Collector!</h1>
+				</div>
+			</div>
+			
+			<!-- Create a container for the instructions -->
+			<div class="row">
+				<div class="col-md-6">
+					<p id="instructions">You will be given a random number at the start of the game.<br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br>You win the game by matching your total score to random number, you lose the game is your total score goes above the random number.<br>The value of each crystal is hidden from you until you click on it.<br>Each time when the game starts, the game will change the values of each crystal.</p></div>
+				<div class="col-sm-6"></div>
+			</div>
+
+			<!-- create a row with the points counter inside -->
+			<div class="row">
+				<div class="col-sm-4">
+  					<h3 class="numGenerator"></h3></div>
+  				<div class="col-sm-2"></div>
+  					<p class="winsLosses"></p></div>
+  				<!-- Empty column -->
+  				<div class="col-sm-6"></div>
+
+			<!--Gems images here-->
+			<div class="row">
+				<div class="col-sm-3">
+					<img class="gemImage" id="gem_1" src="assets/images/topaz.png">
+					<img class="gemImage" id="gem_2" src="assets/images/emerald.png">
+					<img class="gemImage" id="gem_3" src="assets/images/ruby.png">
+					<img class="gemImage" id="gem_4" src="assets/images/yellowgem.png">
+				</div>
+			</div>
+
+			<!-- Total Score counter -->	
+ 			<div class="row">
+ 				<div class="col-sm-4">
+ 					<p class="totalScore">Your total score is: </p>
+				</div>
+			</div>
+		</div>
+	<footer>
+	</footer>
+	<!-- Link to javascript -->
+		<script src="assets/javascript/game.js"></script>
+	</body>
+</html>
